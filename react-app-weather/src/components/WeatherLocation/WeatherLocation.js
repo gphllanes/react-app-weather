@@ -1,6 +1,7 @@
 import React from 'react';
-import Location from '../Location/Location';
-import WeatherData from '../WeatherData/WeatherData';
+import Location from './Location/Location';
+import WeatherData from './WeatherData/WeatherData';
+// import PropTypes from 'prop-types';
 
 const WeatherLocation = () => (
 	<div>
@@ -8,5 +9,8 @@ const WeatherLocation = () => (
 		<WeatherData></WeatherData>
 	</div>
 );
+
+// WeatherLocation.propTypes = {
+// };
 
 export default WeatherLocation;
