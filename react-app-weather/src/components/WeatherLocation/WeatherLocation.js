@@ -1,12 +1,20 @@
 import React from 'react';
 import Location from './Location/Location';
 import WeatherData from './WeatherData/WeatherData';
-// import PropTypes from 'prop-types';
+import './WeatherLocation.css';
+import { SUN } from './../../constants/weathers';
+
+const data = {
+	temperature : 5,
+	weatherState : SUN,
+	humidity : 50,
+	wind : '10 m/s'
+}
 
 const WeatherLocation = () => (
-	<div>
+	<div className="weatherLocationCont">
 		<Location city={'Toledo'}></Location>
-		<WeatherData></WeatherData>
+		<WeatherData data={data}></WeatherData>
 	</div>
 );
 
